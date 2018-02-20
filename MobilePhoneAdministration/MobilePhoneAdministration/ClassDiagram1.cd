@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MobilePhoneAdministration.Models.CostPlace">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAAAAAAAAAAIAAAAAAAQAAEAAAAAAQBA=</HashCode>
+      <FileName>Models\CostPlace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MobilePhoneAdministration.Models.User">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAIAAEAAAAAAAQIAAAAAAAgAAACAAAMAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CostPlace" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
