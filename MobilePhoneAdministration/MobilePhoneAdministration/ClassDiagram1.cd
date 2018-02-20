@@ -1,20 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="MobilePhoneAdministration.Models.CostPlace">
-    <Position X="5.25" Y="2.75" Width="1.5" />
+    <Position X="11.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAIAAAAAAAAAAAAIAAAAAAAQAAEAAAAAAQBA=</HashCode>
       <FileName>Models\CostPlace.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MobilePhoneAdministration.Models.User">
-    <Position X="9" Y="2.75" Width="1.5" />
+    <Position X="13.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAIAAAAIAAEAAAAAAAQIAAAAAAAgAAACAAAMAAA=</HashCode>
       <FileName>Models\User.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="CostPlace" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MobilePhoneAdministration.Models.ContractCategory">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ContractCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MobilePhoneAdministration.Models.SIMCard">
+    <Position X="3.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAUAAAAAACAAIAAAAAAAACAAA=</HashCode>
+      <FileName>Models\SIMCard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ContractCategory" />
     </ShowAsAssociation>
   </Class>
   <Font Name="Tahoma" Size="8.25" />

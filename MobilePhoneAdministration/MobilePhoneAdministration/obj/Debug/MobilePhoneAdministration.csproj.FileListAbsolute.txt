@@ -45,3 +45,4 @@ C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\Mobil
 C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.Migrations.InitialCreate.resources
 C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.csproj.GenerateResource.Cache
 C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.Migrations.AddUser.resources
+C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.Migrations.AddContrCatandSIMCard.resources

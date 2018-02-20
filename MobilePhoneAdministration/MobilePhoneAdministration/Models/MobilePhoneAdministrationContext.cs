@@ -22,5 +22,9 @@ namespace MobilePhoneAdministration.Models
         public System.Data.Entity.DbSet<MobilePhoneAdministration.Models.CostPlace> CostPlaces { get; set; }
 
         public System.Data.Entity.DbSet<MobilePhoneAdministration.Models.User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<MobilePhoneAdministration.Models.ContractCategory> ContractCategories { get; set; }
+
+        public System.Data.Entity.DbSet<MobilePhoneAdministration.Models.SIMCard> SIMCards { get; set; }
     }
 }

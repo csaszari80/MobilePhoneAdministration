@@ -128,6 +128,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContractCategoriesController.cs" />
+    <Compile Include="Controllers\SIMCardsController.cs" />
+    <Compile Include="Migrations\201802201613038_Add ContrCat and SIMCard.cs" />
+    <Compile Include="Migrations\201802201613038_Add ContrCat and SIMCard.Designer.cs">
+      <DependentUpon>201802201613038_Add ContrCat and SIMCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContractCategory.cs" />
     <Compile Include="Controllers\CostPlacesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -147,6 +154,7 @@
     <Compile Include="Models\MobilePhoneAdministrationContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\SIMCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -199,6 +207,16 @@
     <Content Include="Views\Shared\DisplayTemplates\CostPlace.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\User.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\User.cshtml" />
+    <Content Include="Views\ContractCategories\Create.cshtml" />
+    <Content Include="Views\ContractCategories\Delete.cshtml" />
+    <Content Include="Views\ContractCategories\Details.cshtml" />
+    <Content Include="Views\ContractCategories\Edit.cshtml" />
+    <Content Include="Views\ContractCategories\Index.cshtml" />
+    <Content Include="Views\SIMCards\Create.cshtml" />
+    <Content Include="Views\SIMCards\Delete.cshtml" />
+    <Content Include="Views\SIMCards\Details.cshtml" />
+    <Content Include="Views\SIMCards\Edit.cshtml" />
+    <Content Include="Views\SIMCards\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -217,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802201333051_Add-User.resx">
       <DependentUpon>201802201333051_Add-User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201613038_Add ContrCat and SIMCard.resx">
+      <DependentUpon>201802201613038_Add ContrCat and SIMCard.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
