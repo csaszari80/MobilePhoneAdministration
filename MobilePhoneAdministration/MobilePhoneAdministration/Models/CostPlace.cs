@@ -10,6 +10,7 @@ namespace MobilePhoneAdministration.Models
 {
     public class CostPlace
     {
+        //Todo: Annotációkkal magyarítani a címkefeliratokat.
         /// <summary>
         /// PK
         /// </summary>

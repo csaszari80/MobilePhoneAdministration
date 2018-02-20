@@ -130,6 +130,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CostPlacesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Migrations\201802201204149_InitialCreate.cs" />
+    <Compile Include="Migrations\201802201204149_InitialCreate.Designer.cs">
+      <DependentUpon>201802201204149_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802201333051_Add-User.cs" />
+    <Compile Include="Migrations\201802201333051_Add-User.Designer.cs">
+      <DependentUpon>201802201333051_Add-User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CostPlace.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -181,6 +191,14 @@
     <Content Include="Views\CostPlaces\Edit.cshtml" />
     <Content Include="Views\CostPlaces\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\CostPlace.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CostPlace.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\User.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\User.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -192,6 +210,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802201204149_InitialCreate.resx">
+      <DependentUpon>201802201204149_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201333051_Add-User.resx">
+      <DependentUpon>201802201333051_Add-User.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

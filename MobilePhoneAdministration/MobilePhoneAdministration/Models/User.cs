@@ -11,11 +11,13 @@ namespace MobilePhoneAdministration.Models
 {
     public class User
     {
+        //Todo: Annotációkkal magyarítani a címkefeliratokat.
+
         /// <summary>
         /// PK az adatbázisbam
         /// </summary>
         public int Id { get; set; }
-
+        
         /// <summary>
         /// A felhasználó teljes neve
         /// </summary>

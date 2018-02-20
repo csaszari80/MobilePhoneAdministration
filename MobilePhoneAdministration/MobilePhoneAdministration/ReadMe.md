@@ -51,8 +51,8 @@ Később
   - Megjegyzés
 
 - Költséghelyek(CostPlace): A költéghelyek adatbázisa automatikusan lesz karbantartva azonban lehetőség lesz kézzel is felvinni adatokat
-  - CostCode: Költésghelykód
-  - CostName: Költséghely név
+  - CostCode: Költésghelykód (kötelező)
+  - CostName: Költséghely név (kötelező)
   - OrganizationCode: Szervezeti egység kód
   - OrganizationName: Szervezeti egység név
   - ForwardedBill: Igaz, ha a szervezeti egység számára nem közvetlenül kerülnek kiterhelésre a költségek, hanem továbbszámlázzuk őket
@@ -61,10 +61,10 @@ Később
   adatait a SAPHR-ből kapott adatok alapján tölti fel és tartja karban egy ütemezett SQL job (editable 0) 
   a másik csoport tagjait kézzel visszük fel és tartjuk karban(editable 1) az alkalmazáson keresztül ezen felhasználók
   esetében Elegendő a Név a CPID(ha van) és a Költséghely megadása
-  - Name: Név kötelező
+  - Name: Név (kötelező)
   - CPID: Dokszám
   - ADLogin: ADLogin
-  - CostPlace: hivatkozás a költséghelyre
+  - CostPlace: hivatkozás a költséghelyre (kötelező)
   - Active: A felhasználónak van e élő munkaszerződése
   - Editable: Igaz, ha a felhasználóról nem jön automatikusan adat a SAP HR-ből
   - Hidden: Rejtett szám a szám megjelenjen-e a telefonkönyv export-okban

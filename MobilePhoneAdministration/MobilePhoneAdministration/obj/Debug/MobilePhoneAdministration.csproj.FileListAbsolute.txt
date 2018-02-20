@@ -42,3 +42,6 @@ C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\Mobil
 C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\bin\Newtonsoft.Json.xml
 C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.dll
 C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.pdb
+C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.Migrations.InitialCreate.resources
+C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.csproj.GenerateResource.Cache
+C:\Users\csaszariz\Source\Repos\MobilePhoneAdmin\MobilePhoneAdministration\MobilePhoneAdministration\obj\Debug\MobilePhoneAdministration.Migrations.AddUser.resources

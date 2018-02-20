@@ -1,0 +1,40 @@
+﻿@model MobilePhoneAdministration.Models.User
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.CPID, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.CPID, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CPID, "", new { @class = "text-danger" })
+    </div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.CostPlace, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(model => model.CostPlaceId, Model.AssignableCostPlaces, htmlAttributes: new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CostPlace, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Hidden, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        <div class="checkbox">
+            @Html.EditorFor(model => model.Hidden)
+            @Html.ValidationMessageFor(model => model.Hidden, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+<div class="hidden">
+    @Html.HiddenFor(model => model.Active)
+    @Html.HiddenFor(model => model.ADlogin)
+    @Html.HiddenFor(model => model.Editable)
+</div>
