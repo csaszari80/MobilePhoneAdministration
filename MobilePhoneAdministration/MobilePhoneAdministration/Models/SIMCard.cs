@@ -5,6 +5,7 @@ using System.Web.Services.Protocols;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Web.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace MobilePhoneAdministration.Models
 {
@@ -38,6 +39,7 @@ namespace MobilePhoneAdministration.Models
         /// <summary>
         /// Szerződés kategóriája pl(általános, internet, korlátozott adat) a lehetséges kategóriákat a hálózati csoport határozza meg
         /// </summary>
+        [Required]
         public ContractCategory ContractCategory { get; set; }
 
         /// <summary>
@@ -94,11 +96,12 @@ namespace MobilePhoneAdministration.Models
 
         }
 
-        public SIMCard(string contractid, string phonenumber, ContractCategory ContractCategory)
+        public SIMCard(string contractid, string phonenumber, ContractCategory contractcategory, DateTime contractdate)
         {
             ContractId = contractid;
             PhoneNumber = phonenumber;
-            this.ContractCategory = ContractCategory;
+            ContractCategory = contractcategory;
+           ContractDate = contractdate;
         }
     }
 }

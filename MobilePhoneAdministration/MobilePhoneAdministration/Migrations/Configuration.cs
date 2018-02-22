@@ -39,6 +39,13 @@
             );
             context.SaveChanges();
 
+            //simkártyák feltöltése
+            context.SIMCards.AddOrUpdate(x => x.PhoneNumber,
+                new SIMCard(contractid: "1/2018", phonenumber: "+36304489999", contractcategory: context.ContractCategories.Single(x => x.Name == "telefon/internet"), contractdate: DateTime.Today),
+                new SIMCard(contractid: "2/2018", phonenumber: "+36304489998", contractcategory: context.ContractCategories.Single(x => x.Name == "telefon/internet"), contractdate: DateTime.Today),
+                new SIMCard(contractid: "3/2018", phonenumber: "+36304489997", contractcategory: context.ContractCategories.Single(x => x.Name == "telefon/internet"), contractdate: DateTime.Today)
+            );
+            context.SaveChanges();
         }
     }
 }

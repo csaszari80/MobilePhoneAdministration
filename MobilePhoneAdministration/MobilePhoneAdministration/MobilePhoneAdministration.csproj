@@ -138,6 +138,10 @@
     <Compile Include="Migrations\201802220934211_Upgrade SIMCard model.Designer.cs">
       <DependentUpon>201802220934211_Upgrade SIMCard model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802221010458_SIMCard- Contractcategory Required.cs" />
+    <Compile Include="Migrations\201802221010458_SIMCard- Contractcategory Required.Designer.cs">
+      <DependentUpon>201802221010458_SIMCard- Contractcategory Required.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContractCategory.cs" />
     <Compile Include="Controllers\CostPlacesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -223,6 +227,8 @@
     <Content Include="Views\SIMCards\Index.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\ContractCategory.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ContractCategory.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SIMCard.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\SIMCard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802220934211_Upgrade SIMCard model.resx">
       <DependentUpon>201802220934211_Upgrade SIMCard model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221010458_SIMCard- Contractcategory Required.resx">
+      <DependentUpon>201802221010458_SIMCard- Contractcategory Required.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
