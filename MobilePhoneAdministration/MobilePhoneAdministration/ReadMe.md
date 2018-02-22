@@ -35,20 +35,22 @@ Később
   - *Típus(gyártó és típusjel)*
   - Készülék IMEI szám
   - Megjegyzés
-- SIM kártya kategóriák
-  - Megnevezés 
-- SIM kártyák:
-  - *Szerződésszám*
-  - Eszközszám
-  - Szerződés kelte
-  - Kártya IMEI szám
-  - *Telefonszám*
-  - *Kategória(telefon, internet, belső adatforgalom)*
-  - PIN1
-  - PIN2
-  - PUK1
-  - PUK2
-  - Megjegyzés
+
+- ContractCategory:SIM kártya kategóriák
+  - Name: Megnevezés ()kötelező
+
+- SIM kártyák(SIMCard):
+  - ContractId: Szerződésszám (forrása valószínűleg SAP)
+  - DeviceNumber: Eszközszám (forrása valószínűleg SAP)
+  - CantractDate: Szerződés kelte (forrása valószínűleg SAP)
+  - CardIMEI: Kártya IMEI szám (forrása T-Mobile által küldött text-file)
+  - PhoneNumber:Telefonszám (forrása valószínűleg SAP)
+  - ContractCategory: Kategória(telefon, internet, belső adatforgalom) hivatkozás a Sim kártya kategóriájára (forrása kérdéses)
+  - PIN1:(forrása T-Mobile által küldött text-file)
+  - PIN2:(forrása T-Mobile által küldött text-file)
+  - PUK1:(forrása T-Mobile által küldött text-file)
+  - PUK2:(forrása T-Mobile által küldött text-file)
+  - Comment: Megjegyzés szabadon kitölthető
 
 - Költséghelyek(CostPlace): A költéghelyek adatbázisa automatikusan lesz karbantartva azonban lehetőség lesz kézzel is felvinni adatokat
   - CostCode: Költésghelykód (kötelező)

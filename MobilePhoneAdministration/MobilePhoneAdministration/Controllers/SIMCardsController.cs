@@ -46,7 +46,7 @@ namespace MobilePhoneAdministration.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ContractId,PhoneNumber")] SIMCard sIMCard)
+        public ActionResult Create([Bind(Include = "Id,ContractId,DeviceNumber,ContractDate,PhoneNumber,CardIMEI,PIN1,PIN2,PUK1,PUK2,Comment")] SIMCard sIMCard)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace MobilePhoneAdministration.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,ContractId,PhoneNumber")] SIMCard sIMCard)
+        public ActionResult Edit([Bind(Include = "Id,ContractId,DeviceNumber,ContractDate,PhoneNumber,CardIMEI,PIN1,PIN2,PUK1,PUK2,Comment")] SIMCard sIMCard)
         {
             if (ModelState.IsValid)
             {

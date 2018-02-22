@@ -134,6 +134,10 @@
     <Compile Include="Migrations\201802201613038_Add ContrCat and SIMCard.Designer.cs">
       <DependentUpon>201802201613038_Add ContrCat and SIMCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802220934211_Upgrade SIMCard model.cs" />
+    <Compile Include="Migrations\201802220934211_Upgrade SIMCard model.Designer.cs">
+      <DependentUpon>201802220934211_Upgrade SIMCard model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContractCategory.cs" />
     <Compile Include="Controllers\CostPlacesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -238,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802201613038_Add ContrCat and SIMCard.resx">
       <DependentUpon>201802201613038_Add ContrCat and SIMCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802220934211_Upgrade SIMCard model.resx">
+      <DependentUpon>201802220934211_Upgrade SIMCard model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
