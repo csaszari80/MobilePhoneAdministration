@@ -221,6 +221,8 @@
     <Content Include="Views\SIMCards\Details.cshtml" />
     <Content Include="Views\SIMCards\Edit.cshtml" />
     <Content Include="Views\SIMCards\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\ContractCategory.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ContractCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
