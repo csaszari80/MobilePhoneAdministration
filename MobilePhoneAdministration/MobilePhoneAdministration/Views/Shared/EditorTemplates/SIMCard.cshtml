@@ -15,11 +15,28 @@
         @Html.ValidationMessageFor(model => model.DeviceNumber, "", new { @class = "text-danger" })
     </div>
 </div>
-
 <div class="form-group">
     @Html.LabelFor(model => model.ContractDate, htmlAttributes: new { @class = "control-label col-md-2" })
     <div class="col-md-10">
-        @Html.EditorFor(model => model.ContractDate, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.TextBoxFor(model => model.ContractDate, new { @class = "form-control datepicker", placeholder = "A szerződés kelte" })
+        @Html.ValidationMessageFor(model => model.ContractDate, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+
+@*<div class="form-group">
+    @Html.LabelFor(model => model.ContractDate, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.ContractDate, new { htmlAttributes = new { @class = "form-control date-picker" } })
+        @Html.ValidationMessageFor(model => model.ContractDate, "", new { @class = "text-danger" })
+    </div>
+</div>*@
+
+<div class="form-group">
+    @Html.LabelFor(model => model.ContractCategory, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(model => model.ContractCategoryId, Model.AssignableContractCategories, htmlAttributes : new { @class = "form-control" } )
+        
         @Html.ValidationMessageFor(model => model.ContractDate, "", new { @class = "text-danger" })
     </div>
 </div>

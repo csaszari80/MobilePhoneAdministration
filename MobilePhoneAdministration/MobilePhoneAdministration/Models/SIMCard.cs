@@ -29,6 +29,8 @@ namespace MobilePhoneAdministration.Models
         /// <summary>
         /// A kártyához kapcsolódó szerződés Kelte
         /// </summary>
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime ContractDate { get; set; }
 
         /// <summary>

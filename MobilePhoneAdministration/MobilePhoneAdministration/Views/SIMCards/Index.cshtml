@@ -21,6 +21,9 @@
             @Html.DisplayNameFor(model => model.ContractDate)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.ContractCategory)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.PhoneNumber)
         </th>
         <th>
@@ -54,6 +57,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ContractDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContractCategory.Name)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.PhoneNumber)

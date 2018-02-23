@@ -43,7 +43,7 @@ namespace MobilePhoneAdministration.Controllers
         {
             var contractCategories = new List<ContractCategory>();
             contractCategories = db.ContractCategories.ToList();
-            sIMCard.AssignableContractCategories = new SelectList(contractCategories, "Id", "CostCodeAndName");
+            sIMCard.AssignableContractCategories = new SelectList(contractCategories, "Id", "Name");
         }
 
         // GET: SIMCards/Create
@@ -51,7 +51,7 @@ namespace MobilePhoneAdministration.Controllers
         {
             var sIMCard = new SIMCard();
             LoadAssignableContractCategories(sIMCard,db);
-            return View();
+            return View(sIMCard);
         }
 
         // POST: SIMCards/Create
